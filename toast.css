@@ -1,0 +1,79 @@
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    /*min-width: 200px;  Set a default minimum width */
+    color: #fff; /* White text color */
+    font-size: 14px; /* Font Size */
+    font-family: verdana;
+    text-align: center; /* Centered text */
+    border-radius: 3px; /* Rounded borders */
+    position: absolute; /* Sit on top of the screen */
+    z-index: -1; /* Add a z-index if needed */
+    left: 0%; /* Center the snackbar */
+    top: 0%;
+    left: 0px; /* 30px from the top */
+}
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 1s, fadeout 1s 2.5s;
+    animation: fadein 1s, fadeout 1s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {left: 0; opacity: 0;} 
+    to {left: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {left: 0; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {left: 0px; opacity: 1;} 
+    to {left: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {left: 0px; opacity: 1;}
+    to {left: 0; opacity: 0;}
+}
+
+#snackbarr {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    /*min-width: 200px;  Set a default minimum width */
+    color: #fff; /* White text color */
+    font-size: 14px; /* Font Size */
+    font-family: verdana;
+    text-align: center; /* Centered text */
+    border-radius: 3px; /* Rounded borders */
+    position: absolute; /* Sit on top of the screen */
+    z-index: -1; /* Add a z-index if needed */
+    left: 0%; /* Center the snackbar */
+    top: 0%;
+    left: 0px; /* 30px from the top */
+}
+#snackbarr.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.2s, fadeout 1s 2.5s;
+    animation: fadein 0.2s, fadeout 1s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {left: 0; opacity: 0;} 
+    to {left: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {left: 0; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {left: 0px; opacity: 1;} 
+    to {left: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {left: 0px; opacity: 1;}
+    to {left: 0; opacity: 0;}
+}
